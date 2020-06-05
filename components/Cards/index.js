@@ -76,19 +76,11 @@ axios
 
     
     for(let i = 0; i < combinedArticles.length; i++){
-      
-        // console.log(combinedArticles[i])
         let head = combinedArticles[i].headline
         let photo = combinedArticles[i].authorPhoto
         let name = combinedArticles[i].authorName
         let newCard = cardMaker(head, photo, name)
         cardsContainer.appendChild(newCard)
     }
-
-    // combinedArticles.forEach((obj) => {
-    //   const newCard = cardMaker({ obj });
-    //   cardsContainer.appendChild(newCard);
-    // });
-
   
   });
