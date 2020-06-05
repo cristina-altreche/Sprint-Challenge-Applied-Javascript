@@ -21,7 +21,6 @@
 let cardsContainer = document.querySelector(".cards-container");
 
 function cardMaker(head, photo, name) {
- 
 
   let card = document.createElement("div");
   let headLine = document.createElement("div");
@@ -49,7 +48,6 @@ function cardMaker(head, photo, name) {
 return card;
 }
 
-console.log(cardMaker());
 
 axios
   .get("https://lambda-times-backend.herokuapp.com/articles")
@@ -75,7 +73,7 @@ axios
     console.log(combinedArticles);
 
     
-    for(let i = 0; i < combinedArticles.length; i++){
+    for(let i = 0; i < combinedArticles.length -1; i++){
         let head = combinedArticles[i].headline
         let photo = combinedArticles[i].authorPhoto
         let name = combinedArticles[i].authorName
