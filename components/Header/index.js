@@ -22,11 +22,10 @@ function Header() {
   header.appendChild(headerH1);
   header.appendChild(spanTemp);
   headerContainer.appendChild(header);
-  console.log(header);
 
-  spanDate.classList.add('date')
+  spanDate.classList.add("date");
 
-  return header
+  return header;
 }
 
-console.log(Header())
+Header();
